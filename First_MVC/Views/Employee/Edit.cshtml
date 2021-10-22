@@ -1,0 +1,44 @@
+﻿@model First_MVC.Models.Employee
+
+<div class="row">
+    <div class="col-6 offset-3" >
+        <form asp-action="Update" asp-controller="Employee" method="post"></form>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>Edit Employee</h4>
+                </div>
+
+            </div>
+            <div class="card-body">
+                @*@<div class="form-group">
+                    <label asp-for="Id"></label>
+                    <input type="hidden" asp-for="Id" />
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input type="text" asp-for="Name" />
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Salary"></label>
+                    <input type="text" asp-for="Salary" />
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Dept"></label>
+                    <input type="text" asp-for="Dept" />
+
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-success btn-block"/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
